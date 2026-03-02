@@ -29,12 +29,14 @@ Siga estes passos para configurar e executar a API localmente:
 PowerShell
 
 .\venv\Scripts\activate
+
 2. Instalar as Dependências
 Com o ambiente ativado, instale as bibliotecas necessárias:
 
 Bash
 
 pip install -r requirements.txt
+
 3. Configurar o Banco de Dados
 Certifique-se de que seu MySQL está rodando e que existe um banco de dados chamado seubanco.
 
@@ -46,6 +48,7 @@ Inicie o servidor utilizando o Uvicorn:
 Bash
 
 uvicorn main:app --reload
+
 5. Acessar a Documentação
 Acesse o navegador no endereço:
 
@@ -59,3 +62,4 @@ database.py: Gerencia a engine de conexão e a criação da sessão (SessionLoca
 models.py: Define a estrutura das tabelas como classes Python.
 
 main.py: Contém os endpoints da API que utilizam a sessão do banco para realizar operações de CRUD.
+
